@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en-GB" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jasmin Joseph — Software Engineer (Web)</title>
+  <meta name="description" content="Jasmin Joseph — Software engineer specialised in web development. Portfolio showcasing a production-quality minimalist landing page built with semantic HTML, modern CSS and pragmatic JavaScript." />
+  <meta name="author" content="Jasmin Joseph" />
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Jasmin Joseph — Software Engineer" />
+  <meta property="og:description" content="Minimalist, performant portfolio showcasing web development work: HTML, CSS, JavaScript and React. Built with attention to accessibility and maintainability." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="/assets/favicon.ico" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Preload fonts (optional) - comment if not using custom fonts -->
+  <!-- <link rel="preload" href="/assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin> -->
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Site header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Jasmin Joseph — go to top">Jasmin Joseph</a>
+
+      <nav class="header-actions" role="navigation" aria-label="Primary">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+
+        <button id="theme-toggle" class="icon-btn" aria-pressed="true" aria-label="Toggle theme">
+          <span id="theme-icon" aria-hidden="true">☀️</span>
+          <span class="visually-hidden">Toggle dark/light</span>
+        </button>
+
+        <a class="ghost-link" href="https://github.com/missjasmin2025" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- HERO -->
+    <section id="hero" class="hero section" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy fade-in">
+          <h1 id="hero-title" class="hero-title">Hello — I’m <span class="accent">Jasmin Joseph</span></h1>
+          <p class="hero-sub">Software engineer specialising in web development — building reliable, optimised and accessible user experiences at scale.</p>
+
+          <p class="hero-mission">
+            <strong>Mission:</strong> I strive to build software that combines technical clarity with tangible business outcomes. I am ambitious, continuously upskilling and inspired by well-designed products and resilient engineering teams.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn outline" href="#contact">Contact me</a>
+          </div>
+
+          <ul class="profile-meta">
+            <li><strong>Location:</strong> United Kingdom</li>
+            <li><strong>Experience:</strong> Self-taught, ~3 years (courses: Google, Coursera and targeted paid programmes)</li>
+            <li><strong>Primary focus:</strong> Web development — front-end and pragmatic full-stack tasks</li>
+          </ul>
+        </div>
+
+        <!-- Optional image placeholder; uncomment to use -->
+        <!--
+        <figure class="hero-image" aria-hidden="true">
+          <img src="assets/profile.jpg" alt="Jasmin Joseph — Software Engineer">
+        </figure>
+        -->
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="section-title">About</h2>
+
+        <p class="lead fade-in">
+          I am a self-taught software engineer with around three years' practical experience. My learning is course-driven where appropriate (Google, Coursera and paid specialist courses) combined with hands-on project work. I value clarity, maintainability and testability, and I enjoy translating complex product requirements into reliable code.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill fade-in" aria-hidden="false">
+            <h3>Core technical strengths</h3>
+            <p><strong>HTML</strong> (advanced) — semantic markup, accessibility-first development, SEO-aware structure.</p>
+            <p><strong>CSS</strong> (intermediate/modern) — CSS variables, responsive layout, component-driven styling.</p>
+            <p><strong>JavaScript</strong> (intermediate) — ES6+, DOM APIs, modular design, performance-minded implementations.</p>
+          </div>
+
+          <div class="skill fade-in">
+            <h3>Frameworks &amp; tooling</h3>
+            <p><strong>React</strong> — component composition, state management patterns and pragmatic hooks usage.</p>
+            <p><strong>Python</strong> — scripting, automation and lightweight backend work.</p>
+            <p><strong>Dev tools</strong> — Git, GitHub, VS Code, Live Server, basic CI familiarity.</p>
+          </div>
+
+          <div class="skill fade-in">
+            <h3>Professional traits</h3>
+            <ul class="traits">
+              <li>Self-directed learner</li>
+              <li>Detail-oriented and consistent</li>
+              <li>Collaborative and communicative</li>
+              <li>Business-minded — focused on shipping value</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" class="section-title">Projects</h2>
+        <p class="lead fade-in">Featured here: this production landing page — intentionally designed to communicate engineering discipline, accessibility and maintainability.</p>
+
+        <div class="project-list" role="list">
+          <article class="project-card fade-in" role="listitem" aria-labelledby="proj1-title">
+            <h3 id="proj1-title" class="project-title">Portfolio landing page — this site</h3>
+            <p class="project-desc">
+              Purpose-built minimalist portfolio demonstrating production-ready front-end engineering. The implementation focuses on accessibility, performance, and a clear developer experience so future features and projects can be added with minimal friction.
+            </p>
+
+            <dl class="project-meta">
+              <div>
+                <dt>Complexity &amp; considerations</dt>
+                <dd>
+                  <ul>
+                    <li>Semantic, accessible HTML5 structure with keyboard-first navigation.</li>
+                    <li>Responsive CSS using modern layout primitives and CSS custom properties for theming.</li>
+                    <li>Pragmatic JavaScript (no heavy frameworks required for this scope) enabling theme persistence, intersection-driven animations and smooth scrolling.</li>
+                    <li>Intentional performance choices: minimal DOM, CSS-only effects where possible, and asynchronous script loading.</li>
+                    <li>Production-ready patterns: clear separation of concerns, documented code blocks and easy extensibility for additional projects or components.</li>
+                  </ul>
+                </dd>
+              </div>
+
+              <div>
+                <dt>Tools &amp; stack</dt>
+                <dd>
+                  HTML, modern CSS (variables + responsive), vanilla JavaScript (ES6+), Git + GitHub (Pages), VS Code. Easily extendable to React for component-driven expansion.
+                </dd>
+              </div>
+
+              <div>
+                <dt>Repository</dt>
+                <dd><a href="https://github.com/missjasmin2025" target="_blank" rel="noopener noreferrer">github.com/missjasmin2025</a> — current repo contains this project and notes for future iterations.</dd>
+              </div>
+            </dl>
+
+            <div class="project-actions">
+              <a class="btn small" href="https://github.com/missjasmin2025" target="_blank" rel="noopener noreferrer">View repo</a>
+              <a class="btn outline small" href="#contact">Get in touch</a>
+            </div>
+          </article>
+
+          <!-- Placeholder: duplicate and update to add new projects -->
+          <!--
+          <article class="project-card fade-in">
+            ...
+          </article>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">Contact</h2>
+        <p class="lead fade-in">I welcome collaboration and new opportunities. Below are the best ways to reach me.</p>
+
+        <ul class="contact-list fade-in">
+          <li><strong>Email:</strong> <a href="mailto:contactmsjasminjoseph@gmail.com">contactmsjasminjoseph@gmail.com</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/missjasmin2025" target="_blank" rel="noopener noreferrer">github.com/missjasmin2025</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jasmin-joseph" target="_blank" rel="noopener noreferrer">linkedin.com/in/jasmin-joseph</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Back to top -->
+  <button id="back-top" class="back-top" aria-label="Back to top">↑</button>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> Jasmin Joseph — Software Engineer</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
